@@ -23,6 +23,7 @@
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.67",
     "gatsby-plugin-google-gtag": "^2.1.13",
+    "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.3.16",
     "hamburger-react": "^2.2.0",

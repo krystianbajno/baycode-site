@@ -26,7 +26,8 @@ export default  (props: Props) => {
       title={data.site.siteMetadata.title}
       description={data.site.siteMetadata.description}
       siteUrl={data.site.siteMetadata.siteUrl}
-      article={article}
+      image={data.site.siteMetadata.image}
+      article={article || false}
     />
     <Header menu={menu} />
     <div className="page">
@@ -42,7 +43,8 @@ const query = graphql`
       siteMetadata {
         title
         description
-        siteUrl
+        siteUrl,
+        image
       }
     }
   }  
