@@ -21,38 +21,37 @@ const SEO = ({
  siteUrl
 }: Props) => {
   const {pathname} = useLocation()
-
   return (
-    <Helmet title={title}>
+    <Helmet title={title} >
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-      {siteUrl && <meta property="og:url" content={`${siteUrl}${pathname}`} />}
+      <meta property="og:url" content={`${siteUrl}${pathname}`} />
+      <meta name="author" content="Krystian Bajno" />
       <meta name="description" content={description} />
       {article
         ? <meta property="og:type" content="article" />
         : <meta property="og:type" content="website" />
       }
-      {title && <meta property="og:title" content={title} />}
+      <meta property="og:title" content={title} />
 
       {description && (
         <meta property="og:description" content={description} />
       )}
 
-      {image && <meta property="og:image" content={image} />}
-
+      {image && <meta property="og:image" content={image} /> }
+      {image && <meta name="image" content={image} /> }
       <meta name="twitter:card" content="summary_large_image"/>
 
       {title && <meta name="twitter:title" content={title} />}
-      {title && <title>{title}</title>}
+      <title>{title}</title>
 
       {description && (
         <meta name="twitter:description" content={description} />
       )}
-      {image && <meta name="twitter:image" content={image} />}
+      <meta name="twitter:image" content={image} />
       {twitterUser && <meta name="twitter:creator" content={twitterUser} />}
       <meta name="twitter:site" content={twitterUser} />
       <link rel="icon"  href="favicon.svg" />
       <link rel="mask-icon" href="favicon.svg" color="#000000" />
-
     </Helmet>
   )
 }

@@ -12,9 +12,11 @@ module.exports = {
   siteMetadata: {
     title: process.env.SITE_TITLE,
     siteUrl: process.env.SITE_URL,
-    description: process.env.SITE_DESCRIPTION
+    description: process.env.SITE_DESCRIPTION,
+    image: process.env.SITE_IMAGE
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     "gatsby-plugin-sass",
     {
       resolve: `gatsby-plugin-google-gtag`,
