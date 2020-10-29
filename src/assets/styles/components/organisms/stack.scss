@@ -1,0 +1,84 @@
+@import "../../definitions/colors";
+@import "../../styles";
+
+.stack {
+  & > .heading {
+    margin-bottom: 16px;
+    background: -webkit-linear-gradient($logo-color, #9a00de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 24px;
+  }
+
+  & > .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 32px;
+
+    & > h2 {
+      background: -webkit-linear-gradient($logo-color, #9a00de);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    & > ul {
+      font-weight: bold;
+      //color: $purple;
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+      min-height: 32px;
+      //margin-bottom: 32px;
+
+      & > li {
+        padding: 8px;
+      }
+    }
+  }
+
+  & > .tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+      margin-top: 16px;
+      min-width: 180px;
+      margin-right: 1px;
+
+      @media screen and (max-width: $mobile-width) {
+        min-width: 120px;
+      }
+
+      & > * {
+        margin-bottom: 16px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      color: $background;
+      font-weight: 700;
+
+      font-size: 14px;
+      margin-bottom: 16px;
+      & > li {
+        margin-bottom: 4px;
+      }
+
+      & > li > ul {
+        font-weight: 500;
+        margin-top: 4px;
+        margin-left: 8px;
+      }
+    }
+  }
+
+
+}

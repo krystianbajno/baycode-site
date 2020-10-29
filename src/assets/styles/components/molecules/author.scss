@@ -1,0 +1,32 @@
+@import "../../definitions/colors";
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 16px;
+
+  & > .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+  }
+
+  & > .author-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+
+    & > .author-name {
+      font-weight: 300;
+      margin-top: 8px;
+    }
+    & > .author-description {
+      font-weight: 300;
+      line-height: 24px;
+      margin-top: 8px;
+      width: 100%;
+
+    }
+  }
+}

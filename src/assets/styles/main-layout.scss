@@ -1,0 +1,29 @@
+@import 'styles';
+
+.layout {
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  background-color: $layout-background;
+  align-items: center;
+
+  & > .header {
+    width: 100%;
+    background-color: $white;
+  }
+
+  & > .page {
+    width: 100%;
+    max-width: $site-width;
+    min-height: 80vh;
+  }
+
+  & > .footer {
+    margin-top: 32px;
+    width: 100%;
+    max-width: $site-width;
+  }
+
+}
+
+

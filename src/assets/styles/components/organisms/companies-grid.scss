@@ -1,0 +1,11 @@
+@import "../../definitions/colors";
+@import "../../styles";
+
+.companies-grid {
+  display: flex;
+  flex-direction: column;
+
+  & > *:nth-last-child(2) {
+    margin-bottom: 32px;
+  }
+}

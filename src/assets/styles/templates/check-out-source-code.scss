@@ -1,0 +1,17 @@
+.check-out-source-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & > .button-container {
+    display:flex;
+    justify-content:center;
+  }
+
+  & > .check-out {
+    text-align:center;
+    margin-top: 16px;
+    display:flex;
+    justify-content:center;
+  }
+}

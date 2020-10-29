@@ -1,0 +1,20 @@
+@import "../../definitions/colors";
+
+.form-input {
+  color: $white-alternative-text;
+
+  & > .title {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  .error {
+    //&.title {
+    color: $validation-color;
+    //}
+    &.error-data {
+      margin-top:8px;
+    }
+  }
+
+}

@@ -1,0 +1,65 @@
+@import "../../definitions/colors";
+@import "../../definitions/fonts";
+
+.button {
+  border: none;
+
+  // neumorphism
+  border-radius: 8px;
+  background: $white-alternative;
+  box-shadow:  5px 5px 10px $white-neumorphic-darker,
+  -5px -5px 10px $white-neumorphic-brighter;
+
+  &.pressed {
+    background: $white-alternative;
+    box-shadow:  inset 5px 5px 10px $white-neumorphic-darker,
+    inset -5px -5px 10px $white-neumorphic-brighter;
+  }
+
+
+  min-width: 48px;
+  height: 48px;
+  font-size: $medium;
+  padding: 12px;
+  color: $white-alternative-text;
+  z-index: 1;
+  cursor: pointer;
+
+  &.big {
+    height: 64px;
+  }
+
+  &.accent {
+    color: $white-alternative;
+    // neumorphism
+    background: $accent;
+  }
+
+  &.primary {
+    color: $white-alternative;
+    background: $primary;
+  }
+
+  &.disabled {
+    opacity:0.5;
+    cursor: not-allowed;
+  }
+
+  &.loading {
+    opacity:0.5;
+    cursor: progress;
+  }
+
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}

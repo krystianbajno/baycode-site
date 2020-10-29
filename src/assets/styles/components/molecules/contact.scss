@@ -1,0 +1,33 @@
+@import "../../styles";
+
+.contact {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-items: center;
+  text-align:center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & > * {
+    width: 50%;
+    @media screen and (max-width: $mobile-width) {
+      //width: 100%;
+    }
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+
+    & > a {
+      & > .data {
+        margin-top: 8px;
+      }
+    }
+
+  }
+
+}

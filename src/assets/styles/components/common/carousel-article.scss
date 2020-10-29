@@ -1,0 +1,52 @@
+@import '../../definitions/colors';
+
+.carousel-article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &.locked {
+    opacity: 0.618;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & > .title {
+    font-weight: 300;
+    color: $purple;
+    margin-top: 8px;
+  }
+
+
+  & > .describe {
+    margin-top: 16px;
+    z-index: 10;
+    background: $white;
+    padding-top: 16px;
+
+    & > .author {
+      line-height: 16px;
+      margin-top: 8px;
+    }
+
+    & > .description {
+      line-height: 20px;
+      font-weight: 300;
+      margin-top: 8px;
+      padding-bottom:8px;
+    }
+
+  }
+
+  & > .image {
+    min-height: 160px;
+    max-height: 160px;
+    & > img {
+      max-height: 160px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

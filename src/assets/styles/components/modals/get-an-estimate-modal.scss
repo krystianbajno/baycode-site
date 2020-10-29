@@ -1,0 +1,63 @@
+@import '../../styles';
+
+.body {
+  display: flex;
+
+  flex-direction: column-reverse;
+  align-items: center;
+
+  & > .form {
+    display: flex;
+    flex-direction:column;
+    flex-basis: 100%;
+    width: 100%;
+    justify-content: center;
+
+    & > .expand {
+      margin-top:16px;
+      margin-bottom: 32px;
+    }
+
+    & > * {
+      & > .submit {
+        padding-top: 24px;
+        display: flex;
+        justify-content: center;
+      }
+      & > .consent {
+        display: inline-block;
+        justify-content: center;
+        margin-top: 9px;
+        font-size: 9px;
+
+        @media screen and (max-width: $mobile-width) {
+          margin-top: 12px;
+        }
+
+        & > .required {
+          color: red;
+          font-size: 16px;
+        }
+
+        & > input {
+          margin-right: 8px;
+        }
+
+        & > a {
+          @media screen and (max-width: $mobile-width) {
+            font-size: 11px;
+          }
+        }
+
+      }
+    }
+  }
+
+  & > .contact-section {
+    margin-bottom: 32px;
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+
+}

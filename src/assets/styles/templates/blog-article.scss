@@ -1,0 +1,73 @@
+@import "../definitions/colors";
+@import "../styles";
+
+.blog-carousel-under-get-a-quote, .stack-container {
+  margin: 32px 24px 0px 24px;
+}
+
+$blogBreak: 940px;
+.blog-article-page-template {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+
+  & > .image {
+    z-index: 10;
+    min-height: 200px;
+    max-height: 600px;
+
+    & > img {
+      @media screen and (min-width: $blogBreak) {
+        border-radius: $border-radius;
+      }
+      max-height: 600px;
+      width: 100%;
+      object-fit: cover;
+      background: $white;
+      box-shadow:  10px 10px 10px $white-neumorphic-darker,
+      -10px -10px 10px $white-neumorphic-brighter;
+    }
+  }
+
+  & > .blog-article-post {
+    z-index: 20;
+    @media screen and (min-width: $mobile-width) {
+      transform: translateY(-320px);
+    }
+    background: $white;
+    max-width: $blogBreak;
+    width: 100%;
+    min-height: 300px;
+    padding: 16px;
+
+    & > .article-information {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+    }
+
+    & > .contents {
+      padding: 16px;
+    }
+  }
+
+  .articles-grid {
+    //transform: translateY(-200px);
+    @media screen and (min-width: $mobile-width) {
+      transform: translateY(-180px);
+    }
+    @media screen and (max-width: 1200px) {
+      margin: 32px 0 32px 0;
+
+      & > * {
+        & > .title {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+
+}
+

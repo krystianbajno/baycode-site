@@ -1,0 +1,29 @@
+@import "../../styles";
+@import "../../definitions/colors";
+
+.company-molecule {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 32px 0 32px;
+  cursor: default;
+
+  & > .name {
+    background: -webkit-linear-gradient($logo-color, #9a00de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12px;
+  }
+
+  & > .description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+
+    & > span {
+      font-weight: 300;
+      line-height: 20px;
+      margin-top: 4px;
+    }
+  }
+}

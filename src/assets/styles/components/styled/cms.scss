@@ -1,0 +1,80 @@
+@import "../../definitions/fonts";
+
+
+
+h1.contentful, h2.contentful, h3.contentful, h4.contentful,
+h5.contentful h6.contentful {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+h1.contentful {
+  font-size: $font-size-h1
+}
+h2.contentful {
+  font-size: $font-size-h2
+}
+h3.contentful {
+  font-size: $font-size-h3;
+}
+h4.contentful {
+  font-size: $font-size-h3;;
+}
+h5.contentful {
+  font-size: $font-size-h3;;
+}
+h6.contentful {
+  font-size: $font-size-h3;;
+}
+
+hr.contentful {
+  margin-bottom: 16px;
+  border: 1px solid #dae2e2;
+}
+.contentful {
+  display: flex;
+  outline: none;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+
+  &.asset-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    & > .asset-image {
+      max-height: 640px;
+      width: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+  &.italic {
+    font-style: italic;
+  }
+
+  &.underline {
+    text-decoration: underline;
+  }
+
+  &.code {
+    display: flex;
+    align-items:center;
+    background-color: #3b4040;
+    color: white;
+    padding: 20px;
+    width: 100%;
+  }
+
+  &.text {
+    min-height: 16px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+

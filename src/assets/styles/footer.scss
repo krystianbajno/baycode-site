@@ -1,0 +1,18 @@
+@import 'definitions/colors';
+@import 'styles';
+
+.footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > a {
+    font-weight: bold;
+    cursor: pointer;
+    //font-weight: 500;
+    font-size: 14px;
+    margin-bottom:32px;
+  }
+}
