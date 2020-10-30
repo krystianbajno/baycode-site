@@ -64,7 +64,7 @@ const LandingPage = (props: Props) => {
     }
     welcomeSecurity={
       <Card title="Security.">
-        <h2>I ensure secure solutions.</h2>
+        <h2>Secure solutions ensured</h2>
         <h3>
           As you may know, security is one of the most crucial fundamentals of a running business.<br />
           <b>With best coding practices, analysis, and penetration testing services,

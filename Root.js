@@ -39,6 +39,6 @@ const store = createAppStore({
 
 export default ({ element, actions }) => {
   return <Provider store={store}>
-    {<App store={store}>{element}</App>}
+    <App store={store}>{element}</App>
   </Provider>
 }

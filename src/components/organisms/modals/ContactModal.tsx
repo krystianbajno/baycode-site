@@ -63,7 +63,7 @@ class ContactModal extends React.Component<Props, State> {
     return <Modal size="sm" show={visible || false} onClose={onClose}>
       <Modal.Header>
         <Modal.Title>
-          Let's Do This
+          Contact
         </Modal.Title>
         <Modal.Body padding className="body">
           <div className="body">
@@ -72,7 +72,7 @@ class ContactModal extends React.Component<Props, State> {
                 className={`${estimateFormExpanded && 'pressed' || 'primary '}`}
                 onPress={toggleEstimateForm}
               >
-                Receive a quote after sending a message
+                Send a message through cloud function
               </Button>
               <Expand
                 open={estimateFormExpanded}
@@ -94,7 +94,7 @@ class ContactModal extends React.Component<Props, State> {
                     disabled={!consentChecked}
                     loading={estimateLoading}
                   >
-                    Let's go
+                    Let's build
                   </Button>
                 </div>
                 <div className="consent">
