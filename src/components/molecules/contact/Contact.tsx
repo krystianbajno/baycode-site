@@ -36,7 +36,7 @@ export default (props) => (
           <SmartphoneIcon width={100} height={100} />
         </div>
         <div className="data">
-          {props.phone}
+          Call
         </div>
       </OutboundLink>
     </div>
