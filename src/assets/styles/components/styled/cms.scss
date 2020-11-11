@@ -1,6 +1,5 @@
 @import "../../definitions/fonts";
-
-
+@import "../../definitions/colors";
 
 h1.contentful, h2.contentful, h3.contentful, h4.contentful,
 h5.contentful h6.contentful {
@@ -32,7 +31,6 @@ hr.contentful {
   border: 1px solid #dae2e2;
 }
 .contentful {
-  display: flex;
   outline: none;
   white-space: pre-wrap;
   overflow-wrap: break-word;
@@ -44,8 +42,10 @@ hr.contentful {
     justify-content: center;
     align-items: center;
     & > .asset-image {
+      padding:5px;
+      box-shadow:  20px 20px 60px $white-neumorphic-darker,
+      -20px -20px 60px $white-neumorphic-brighter;
       max-height: 640px;
-      width: 100%;
       max-width: 100%;
       object-fit: contain;
     }
