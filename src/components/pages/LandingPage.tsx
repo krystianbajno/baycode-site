@@ -50,9 +50,9 @@ const LandingPage = (props: Props) => {
       <Card title="Hello.">
         <h2>I am a <a href={props.contact?.linkedin}>software engineer ⚙.</a></h2>
         <h3>
-          I love to make things happen by using modern technologies.<br />
-          From profound analysis and design, through implementation, to maintenance.<br />
-          <b>I produce custom software to suit your needs and help to build your business, making your investment grow.</b>
+          <p>I love to make things happen by using modern technologies.</p>
+          <p><a href="https://en.wikipedia.org/wiki/Agile_software_development">We will do it from profound analysis and design, through implementation, to the testing and reviewing phase in reiterated sprints until we reach final release and maintenance.</a></p>
+          <p><b>We will produce custom software to suit your needs and help to build your business, making your investment grow.</b></p>
         </h3>
       </Card>
     }
@@ -66,9 +66,8 @@ const LandingPage = (props: Props) => {
       <Card title="Security.">
         <h2>Secure solutions ensured</h2>
         <h3>
-          As you may know, security is one of the most crucial fundamentals of a running business.<br />
-          <b>With best coding practices, analysis, and penetration testing services,
-            your data will be secure in cyberspace.</b>
+          <p>As you may know, security is one of the most crucial fundamentals of a running business.</p>
+          <p><b>With best coding practices, analysis, and penetration testing services, your data will be secure in cyberspace.</b></p>
         </h3>
       </Card>
     }

@@ -22,9 +22,9 @@ export const rootReducer = combineReducers({
   settings: SettingsReducer
 });
 
-const enhancer = (extraArguments) => composeWithDevTools(applyMiddleware(
-  thunk.withExtraArgument(extraArguments)
-));
+const enhancer = (extraArguments) => composeWithDevTools(
+  applyMiddleware(thunk.withExtraArgument(extraArguments))
+);
 
 export const createAppStore = (extraArguments): Store => createStore(
   rootReducer,
