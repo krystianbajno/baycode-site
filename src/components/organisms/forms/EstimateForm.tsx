@@ -17,7 +17,7 @@ export default (props) => {
       <div className="email">
         <FormInput
             title="Email"
-            placeholder="Email"
+            placeholder="Email for response (optional)"
             value={estimate.email}
             onChange={setEstimateEmail}
             error={estimateErrors?.email}
@@ -35,7 +35,7 @@ export default (props) => {
       <div className="phone">
          <FormInput
             title="Phone"
-            placeholder="Phone (optional)"
+            placeholder="Phone for response (optional)"
             value={estimate.phone}
             onChange={setEstimatePhone}
             error={estimateErrors?.phone}
@@ -45,7 +45,7 @@ export default (props) => {
           <FormInput
             title="Message"
             textarea
-            placeholder="My needs are..."
+            placeholder="My needs are / My message is..."
             value={estimate.contents}
             onChange={setEstimateContents}
             error={estimateErrors?.contents}

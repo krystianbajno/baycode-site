@@ -59,6 +59,7 @@ class ContactModal extends React.Component<Props, State> {
 
     const {consentChecked} = this.state
     const toggleEstimateForm = () => setEstimateFormExpanded(!estimateFormExpanded)
+    const privateDataSet = estimate && !!(estimate.email || estimate.phone)
 
     return <Modal size="sm" show={visible || false} onClose={onClose}>
       <Modal.Header>
@@ -69,10 +70,10 @@ class ContactModal extends React.Component<Props, State> {
           <div className="body">
             {estimate && <div className="form">
               <Button
-                className={`${estimateFormExpanded && 'pressed' || 'primary '}`}
+                className={estimateFormExpanded && `pressed`}
                 onPress={toggleEstimateForm}
               >
-                Send a message through cloud function
+                Send a message directly
               </Button>
               <Expand
                 open={estimateFormExpanded}
@@ -87,17 +88,7 @@ class ContactModal extends React.Component<Props, State> {
                   setEstimatePhone={setEstimatePhone}
                   setEstimateContents={setEstimateContents}
                 />
-                <div className="submit">
-                  <Button
-                    className="big accent"
-                    onPress={submitEstimateForm}
-                    disabled={!consentChecked}
-                    loading={estimateLoading}
-                  >
-                    Let's build
-                  </Button>
-                </div>
-                <div className="consent">
+                {privateDataSet && <div className="consent">
                   <span className="required">*</span>
                   <Checkbox
                     onChange={this.checkConsent}
@@ -108,6 +99,16 @@ class ContactModal extends React.Component<Props, State> {
                     to be processed by Baycode Krystian Bajno in accordance with the Privacy Policy,
                     the content of which I have read and is clear to me.
                   </a>
+                </div>}
+                <div className="submit">
+                  <Button
+                    className="big accent"
+                    onPress={submitEstimateForm}
+                    disabled={privateDataSet && !consentChecked}
+                    loading={estimateLoading}
+                  >
+                    Let's build
+                  </Button>
                 </div>
               </Expand>
             </div>}
