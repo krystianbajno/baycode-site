@@ -27,7 +27,6 @@ export default (props) => {
           {articleContents}
         </div>
       </section>
-      {/*<div className="comments" />*/}
       <section className="articles-grid">
         {blogCarousel}
       </section>

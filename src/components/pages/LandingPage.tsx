@@ -12,7 +12,7 @@ import ContactModal from "../organisms/modals/ContactModal";
 import Stack from "../organisms/Stack";
 import CheckOutSourceCode from "../organisms/common/CheckOutSourceCode";
 import {Projects} from "../organisms/projects/Projects";
-
+import i18n from "../../i18n/i18n";
 
 interface Props {
   articles
@@ -47,12 +47,19 @@ const LandingPage = (props: Props) => {
     blogRef={props.blogRef}
     menu={props.menu}
     welcomeEngineer={
-      <Card title="Hello.">
-        <h2>I am a <a href={props.contact?.linkedin}>software engineer ⚙.</a></h2>
+      <Card title={i18n.t("welcome.engineer.title")}>
+        <h2>
+          {i18n.t("welcome.engineer.ama")}
+          <a href={props.contact?.linkedin}> {i18n.t('welcome.engineer.software-engineer')}</a>
+        </h2>
         <h3>
-          <p>I love to make things happen by using modern technologies.</p>
-          <p><a href="https://en.wikipedia.org/wiki/Agile_software_development">We will do it from profound analysis and design, through implementation, to the testing and reviewing phase in reiterated sprints until we reach final release and maintenance.</a></p>
-          <p><b>We will produce custom software to suit your needs and help to build your business, making your investment grow.</b></p>
+          <p>{i18n.t("welcome.engineer.subtitle")}</p>
+          <p>
+            <a href="https://en.wikipedia.org/wiki/Agile_software_development">
+              {i18n.t("welcome.engineer.methodology")}
+            </a>
+          </p>
+          <p><b>{i18n.t("welcome.engineer.what-i-do")}</b></p>
         </h3>
       </Card>
     }
@@ -63,11 +70,11 @@ const LandingPage = (props: Props) => {
       />
     }
     welcomeSecurity={
-      <Card title="Security.">
-        <h2>Secure solutions ensured</h2>
+      <Card title={i18n.t("welcome.security.title")}>
+        <h2>{i18n.t("welcome.security.subtitle")}</h2>
         <h3>
-          <p>As you may know, security is one of the most crucial fundamentals of a running business.</p>
-          <p><b>With best coding practices, analysis, and penetration testing services, your data will be secure in cyberspace.</b></p>
+          <p>{i18n.t("welcome.security.trait")}</p>
+          <p><b>{i18n.t("welcome.security.advantage")}</b></p>
         </h3>
       </Card>
     }

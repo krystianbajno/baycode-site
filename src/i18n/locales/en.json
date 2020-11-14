@@ -1,0 +1,39 @@
+{
+  "welcome": {
+    "engineer": {
+      "title": "Hello.",
+      "ama": "I am a",
+      "software-engineer": "software engineer ⚙.",
+      "subtitle": "I love to make things happen by using modern technologies.",
+      "methodology": "We will do it from profound analysis and design, through implementation, to the testing and reviewing phase in reiterated sprints until we reach final release and maintenance.",
+      "what-i-do": "I provide custom software to suit the needs and help to build your business, together making your investment grow."
+    },
+    "security": {
+      "title": "Security.",
+      "subtitle": "Secure solutions ensured",
+      "trait": "As you may know, security is one of the most crucial fundamentals of a running business.",
+      "advantage": "With best coding practices, analysis, and penetration testing services, your data will be secure in cyberspace."
+    }
+  },
+  "quote": "Get a quote",
+  "drawer": {
+    "companies": "Companies",
+    "projects": "Projects"
+  },
+  "check-out-source": {
+    "i-want-to-see": "I want to see the source code",
+    "you-can-check-out": "You can check out the source code of this website in the Github repository."
+  },
+  "contact": {
+    "contact": "Contact",
+    "agreement": "I hereby give consent for my personal data in the form of my e-mail address, telephone number\nto be processed by Baycode Krystian Bajno in accordance with the Privacy Policy,\nthe content of which I have read and is clear to me.",
+    "send-a-message-directly": "Send a message directly",
+    "send-a-message-cta": "Let's build",
+    "linkedIn": "LinkedIn",
+    "call": "Call",
+    "telegram": "Telegram"
+  },
+  "blog": "Blog",
+  "stack": "Stack",
+  "services": "Services"
+}
