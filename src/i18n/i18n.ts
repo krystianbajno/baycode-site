@@ -1,15 +1,8 @@
 import i18n from 'i18next';
-import Backend from 'i18next-http-backend';
 
-const path = process.env.GATSBY_LOCALES
-
-i18n.use(Backend).init({
-  backend: {
-    loadPath: path
-  },
+i18n.init({
   fallbackLng: 'en',
   debug: true,
-
   interpolation: {
     escapeValue: false,
   },
@@ -18,5 +11,7 @@ i18n.use(Backend).init({
     wait: true,
   },
 });
+
+i18n.addResourceBundle('en', 'translation', require("./locales/en.json"));
 
 export default i18n;
