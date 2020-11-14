@@ -8,6 +8,7 @@ import Contact from "../../../models/Contact"
 
 import { Button } from "../../atoms/common/Button";
 import Expand from "react-expand-animated";
+import i18n from "../../../i18n/i18n";
 
 import Checkbox from '@material-ui/core/Checkbox';
 import "../../../assets/styles/components/modals/get-an-estimate-modal.scss"
@@ -64,7 +65,7 @@ class ContactModal extends React.Component<Props, State> {
     return <Modal size="sm" show={visible || false} onClose={onClose}>
       <Modal.Header>
         <Modal.Title>
-          Contact
+          {i18n.t('contact.contact')}
         </Modal.Title>
         <Modal.Body padding className="body">
           <div className="body">
@@ -73,7 +74,7 @@ class ContactModal extends React.Component<Props, State> {
                 className={estimateFormExpanded && `pressed`}
                 onPress={toggleEstimateForm}
               >
-                Send a message directly
+                {i18n.t('contact.send-a-message-directly')}
               </Button>
               <Expand
                 open={estimateFormExpanded}
@@ -95,9 +96,7 @@ class ContactModal extends React.Component<Props, State> {
                     checked={consentChecked}
                   />
                   <a href="https://storage.googleapis.com/baycode-51877.appspot.com/privacy_policy.pdf">
-                    I hereby give consent for my personal data in the form of my e-mail address, telephone number
-                    to be processed by Baycode Krystian Bajno in accordance with the Privacy Policy,
-                    the content of which I have read and is clear to me.
+                    {i18n.t('contact.agreement')}
                   </a>
                 </div>}
                 <div className="submit">
@@ -107,7 +106,7 @@ class ContactModal extends React.Component<Props, State> {
                     disabled={privateDataSet && !consentChecked}
                     loading={estimateLoading}
                   >
-                    Let's build
+                    {i18n.t('contact.send-a-message-cta')}
                   </Button>
                 </div>
               </Expand>

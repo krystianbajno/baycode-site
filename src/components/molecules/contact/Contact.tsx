@@ -5,6 +5,7 @@ import LinkedinIcon from "../../../assets/images/contact/linkedin.svg"
 import MessageIcon from "../../../assets/images/contact/message.svg"
 import SmartphoneIcon from "../../../assets/images/contact/smartphone.svg"
 import TelegramIcon from "../../../assets/images/contact/telegram.svg"
+import i18n from "../../../i18n/i18n";
 
 import "../../../assets/styles/components/molecules/contact.scss"
 
@@ -26,7 +27,7 @@ export default (props) => (
           <LinkedinIcon width={90} height={90} />
         </div>
         <div className="data">
-          LinkedIn
+          {i18n.t('contact.linkedIn')}
         </div>
       </OutboundLink>
     </div>
@@ -36,7 +37,7 @@ export default (props) => (
           <SmartphoneIcon width={100} height={100} />
         </div>
         <div className="data">
-          Call
+          {i18n.t('contact.call')}
         </div>
       </OutboundLink>
     </div>
@@ -46,7 +47,7 @@ export default (props) => (
           <TelegramIcon width={100} height={100} />
         </div>
         <div className="data">
-          Telegram
+          {i18n.t('contact.telegram')}
         </div>
       </OutboundLink>
     </div>

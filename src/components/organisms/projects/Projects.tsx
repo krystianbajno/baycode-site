@@ -6,6 +6,7 @@ import "../../../assets/styles/components/common/modal.scss"
 
 import { ProjectsGrid } from "./grid/ProjectsGrid";
 import { CompaniesGrid } from "../companies/grid/CompaniesGrid"
+import i18n from "../../../i18n/i18n";
 
 export const Projects = (props) => {
   const {projects, companies} = props;
@@ -21,13 +22,13 @@ export const Projects = (props) => {
         className="modal-close"
       />
       <h2>
-        Companies
+        {i18n.t('drawer.companies')}
       </h2>
       <div className="companies-scroll">
         <CompaniesGrid companies={companies}/>
       </div>
       <h2>
-        Projects
+        {i18n.t('drawer.projects')}
       </h2>
       <div className="projects-scroll">
         <ProjectsGrid projects={projects}/>

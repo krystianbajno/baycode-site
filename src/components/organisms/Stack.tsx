@@ -2,6 +2,7 @@ import * as React from "react"
 
 import "../../assets/styles/components/organisms/stack.scss"
 import Stack from "../../models/Stack"
+import i18n from "../../i18n/i18n";
 
 
 const RecurseChild = (props) => {
@@ -23,7 +24,7 @@ const RecurseChild = (props) => {
 export default ({ stack }) => {
   return <div className="stack">
     <h1 className="heading">
-      Stack
+      {i18n.t('stack')}
     </h1>
     <div className="tools">
       {stack?.map((item: Stack, key) => (
@@ -47,7 +48,7 @@ export default ({ stack }) => {
       ))}
     </div>
     <div className="services">
-      <h2>Services</h2>
+      <h2>{i18n.t('services')}</h2>
       <ul>
         <li>Backend Dev</li>
         <li>Frontend Dev</li>

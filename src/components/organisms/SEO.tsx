@@ -51,7 +51,7 @@ const SEO = ({
       {twitterUser && <meta name="twitter:creator" content={twitterUser} />}
       <meta name="twitter:site" content={twitterUser} />
       <link rel="icon"  href="favicon.svg" />
-      <link rel="mask-icon" href="favicon.svg" color="#000000" />
+      <link rel="mask-icon" href="favicon.svg" />
     </Helmet>
   )
 }
