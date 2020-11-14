@@ -52,7 +52,7 @@ const LandingPage = (props: Props) => {
         <h3>
           <p>I love to make things happen by using modern technologies.</p>
           <p><a href="https://en.wikipedia.org/wiki/Agile_software_development">We will do it from profound analysis and design, through implementation, to the testing and reviewing phase in reiterated sprints until we reach final release and maintenance.</a></p>
-          <p><b>We will produce custom software to suit your needs and help to build your business, making your investment grow.</b></p>
+          <p><b>We create custom software to suit the needs and help to build your business, together making your investment grow.</b></p>
         </h3>
       </Card>
     }
