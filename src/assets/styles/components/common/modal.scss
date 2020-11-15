@@ -1,4 +1,5 @@
 @import "../../definitions/colors";
+@import "../../styles";
 
 .modal-close {
   position: absolute;
@@ -78,14 +79,19 @@
 // normalize the modal sizes from obscured modal
 .modal-size-width {
   max-width: 544px;
+  min-width: 100%;
+
+  @media (min-width: $mobile-width) {
+    min-width: 420px;
+  }
 }
 
 .modal-size-height-m {
-  min-height: 246px;
+  min-height: 120px;
 }
 
 .modal-size-height-s {
-  min-height: 192px;
+  min-height: 120px;
 }
 
 .modal---modal-content---3pwnC.modal---xs---1z3ff {

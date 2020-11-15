@@ -122,7 +122,7 @@ class ContactModal extends React.Component<Props, State> {
                   linkedin={contact?.linkedin}
                   phone={contact?.phone}
                   telegram={contact?.telegram}
-                /> || <></>}
+                /> || React.Fragment}
               </Expand>
             </div>
           </div>

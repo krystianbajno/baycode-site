@@ -3,6 +3,6 @@ export const back = () => {
 }
 
 export const redirect = (location) => {
-  window && window.location.replace(location)
+  window && window.location.assign(location)
 }
 

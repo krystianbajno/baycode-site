@@ -53,13 +53,13 @@ const LandingPage = (props: Props) => {
           <a href={props.contact?.linkedin}> {i18n.t('welcome.engineer.software-engineer')}</a>
         </h2>
         <h3>
-          <p>{i18n.t("welcome.engineer.subtitle")}</p>
+          <p><b>{i18n.t("welcome.engineer.what-i-do")}</b></p>
           <p>
             <a href="https://en.wikipedia.org/wiki/Agile_software_development">
               {i18n.t("welcome.engineer.methodology")}
             </a>
           </p>
-          <p><b>{i18n.t("welcome.engineer.what-i-do")}</b></p>
+          <p><b>{i18n.t("welcome.engineer.subtitle")}</b></p>
         </h3>
       </Card>
     }
@@ -90,30 +90,20 @@ const LandingPage = (props: Props) => {
       />
     }
     checkOutSourceCode={
-      <CheckOutSourceCode link={props.contact?.githubRepo} />
+      props.contact?.githubRepo && <CheckOutSourceCode link={props.contact.githubRepo} />
     }
     blogCarousel={
-      props.articles && <BlogCarousel
+      props.articles.length ? <BlogCarousel
         articles={props.articles}
         onItemPressed={props.onBlogCarouselItemPressed}
-      />
+      /> : React.Fragment
     }
     stack={
       props.stack && <Stack stack={props.stack} />
     }
     getAnEstimateModal={
       <ContactModal
-        contact={props.contact}
-        estimate={props.estimate}
-        estimateLoading={props.estimateLoading}
-        estimateErrors={props.estimateErrors}
-        submitEstimateForm={props.submitEstimateForm}
-        setEstimateEmail={props.setEstimateEmail}
-        setEstimateCompany={props.setEstimateCompany}
-        setEstimatePhone={props.setEstimatePhone}
-        setEstimateContents={props.setEstimateContents}
-        setEstimateFormExpanded={props.setEstimateFormExpanded}
-        estimateFormExpanded={props.estimateFormExpanded}
+        {...props}
         onClose={props.closeContactModal}
         visible={props.contactModalVisible}
       />
