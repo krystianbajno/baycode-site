@@ -1,15 +1,15 @@
 {
   "welcome": {
     "engineer": {
-      "title": "Hello.",
+      "title": "Welcome",
       "ama": "I am a",
-      "software-engineer": "software engineer ⚙.",
-      "subtitle": "I love to make things happen by using modern technologies.",
-      "methodology": "We will do it from profound analysis and design, through implementation, to the testing and reviewing phase in reiterated sprints until we reach final release and maintenance.",
-      "what-i-do": "I provide custom software to suit the needs and help to build your business, together making your investment grow."
+      "software-engineer": "software engineer ⚙",
+      "subtitle": "Your part is focusing on what you do best.",
+      "what-i-do": "I provide software tailored to your needs and help you build your business, contributing to the growth of investment together.",
+      "methodology": "Agile methodology combined with cutting edge technologies ensures rapid development and reliable software."
     },
     "security": {
-      "title": "Security.",
+      "title": "Security",
       "subtitle": "Secure solutions ensured",
       "trait": "As you may know, security is one of the most crucial fundamentals of a running business.",
       "advantage": "With best coding practices, analysis, and penetration testing services, your data will be secure in cyberspace."

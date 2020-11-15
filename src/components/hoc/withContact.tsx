@@ -6,7 +6,7 @@ import {compose} from "redux";
 const mapDispatchToProps = dispatch => ({})
 
 const mapStateToProps = state => ({
-  contact: state.settings.contact,
+  contact: state.settings.contact
 })
 
 const component = WrappedComponent => (props) => {
