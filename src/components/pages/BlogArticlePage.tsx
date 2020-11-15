@@ -7,7 +7,6 @@ import ArticleContents from "../organisms/blog/ArticleContents"
 import ContactModal from "../organisms/modals/ContactModal"
 import { Projects } from "../organisms/projects/Projects"
 
-
 export default (props) => {
   return <BlogArticlePageTemplate
     title={props.selectedArticle?.title}
@@ -27,6 +26,7 @@ export default (props) => {
       onItemPressed={props.onBlogCarouselItemPressed}
     />}
     contactModal={ <ContactModal
+      {...props}
       contact={props.contact}
       onClose={props.closeContactModal}
       visible={props.contactModalVisible}

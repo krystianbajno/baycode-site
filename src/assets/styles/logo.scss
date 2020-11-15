@@ -1,8 +1,10 @@
 @import "./definitions/colors";
 
 .logo {
+  display: flex;
+  align-items: center;
   // neomorphism
-  background: -webkit-linear-gradient($logo-color, #9a00de);
+  background: -webkit-linear-gradient($logo-color, $gamboge);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   //
@@ -13,6 +15,10 @@
   color: $logo-color;
   font-weight: 800;
   cursor: pointer;
+
+  & > .logo-text {
+    margin-left: 12px;
+  }
 
   & > .logoSeo {
     border: 0;

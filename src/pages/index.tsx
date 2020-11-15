@@ -1,8 +1,6 @@
 import * as React from "react"
 import LandingPageView from "../components/pages/LandingPage";
 
-import {NotificationManager} from 'react-notifications';
-
 import Article from "../models/Article";
 import Project from "../models/Project";
 import Estimate from "../models/Estimate";
@@ -24,6 +22,7 @@ import { MutableRefObject } from "react"
 interface Props {
   blogRef: MutableRefObject<HTMLDivElement>,
   stackRef: MutableRefObject<HTMLDivElement>
+  submitEstimateForm,
 
   articles: Article[];
   projects: Project[];
@@ -31,9 +30,6 @@ interface Props {
   companies: Company[];
   estimate: Estimate;
   menu: Menu;
-
-  estimateFormActions,
-  estimateForm,
 
   contact: Contact,
   contactModalVisible: boolean;
@@ -48,16 +44,7 @@ interface Props {
 interface State {}
 class LandingPageController extends React.Component<Props, State>
 {
-  submitEstimateForm = () => this.props.estimateFormActions.submitEstimateFormAction(
-    (response) => NotificationManager.success(response?.data.message, "Hooray!"),
-    (response) => NotificationManager.error(response?.data?.message, "Oops")
-  );
-
   render = () => <LandingPageView
-    submitEstimateForm={this.submitEstimateForm}
-    onBlogCarouselItemPressed={this.props.onBlogCarouselItemPressed}
-    {...this.props.estimateFormActions}
-    {...this.props.estimateForm}
     {...this.props}
   />;
 }

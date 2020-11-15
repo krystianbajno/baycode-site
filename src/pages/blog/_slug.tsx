@@ -8,6 +8,7 @@ import BlogArticlePage from "../../components/pages/BlogArticlePage"
 import {redirect} from "../../utils/navigation"
 import withExperience from "../../components/hoc/withExperience"
 import Contact from "../../models/Contact"
+import withEstimate from "../../components/hoc/withEstimate";
 
 interface State {}
 interface Props {
@@ -20,7 +21,6 @@ interface Props {
   contactModalVisible: boolean;
   openContactModal: () => void;
   closeContactModal: () => void;
-
   toggleProjectsDrawerVisible: () => void;
   projectsDrawerVisible: boolean;
 }
@@ -40,7 +40,6 @@ class BlogArticleController extends React.Component<Props, State> {
   }
 
   public render = () => <BlogArticlePage
-    onBlogCarouselItemPressed={this.props.onBlogCarouselItemPressed}
     {...this.props}
   />
 }
@@ -48,6 +47,7 @@ class BlogArticleController extends React.Component<Props, State> {
 export default compose(
   withArticles,
   withExperience,
+  withEstimate,
   withContact,
   withBlogMenu
 )(BlogArticleController);

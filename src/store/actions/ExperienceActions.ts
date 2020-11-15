@@ -54,7 +54,7 @@ export const getProjects = () => async (
 ) => {
   const { data } = await cloudStorageApi.getProjects()
   const { projects } = await xml2js.parseStringPromise(data);
-  return projects.project.map(project => fromXML(project))
+  return projects.project.map(project => fromXML(project)).reverse()
 }
 
 export const getCompanies = () => async (

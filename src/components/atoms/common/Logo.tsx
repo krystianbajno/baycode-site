@@ -1,10 +1,11 @@
 import * as React from "react";
 
 import "../../../assets/styles/logo.scss"
-
+import Icon from "../../../assets/images/icon.svg"
 
 export default ({onPress, logo}) => (
   <div className="logo" onClick={onPress}>
-    {logo}
+    <Icon height={32} width={32}/>
+    <span className="logo-text">{logo}</span>
   </div>
 )

@@ -64,7 +64,7 @@ class ContactModal extends React.Component<Props, State> {
 
     return <Modal size="sm" show={visible || false} onClose={onClose}>
       <Modal.Header>
-        <Modal.Title>
+        <Modal.Title className="primary-color">
           {i18n.t('contact.contact')}
         </Modal.Title>
         <Modal.Body padding className="body">
@@ -122,7 +122,7 @@ class ContactModal extends React.Component<Props, State> {
                   linkedin={contact?.linkedin}
                   phone={contact?.phone}
                   telegram={contact?.telegram}
-                /> || React.Fragment}
+                /> || <></>}
               </Expand>
             </div>
           </div>
