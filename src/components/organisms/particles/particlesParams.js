@@ -15,7 +15,7 @@ export default () => ({
             type: "triangle",
                 stroke: {
                 width: 5,
-                color: "#5C0084"
+                color: "#0008f2ff"
             },
             polygon: {
                 nb_sides: 4

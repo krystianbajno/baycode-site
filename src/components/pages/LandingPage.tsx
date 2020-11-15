@@ -1,6 +1,5 @@
 import * as React from "react";
 import LandingPageTemplate from "../templates/LandingPageTemplate";
-import Card from "../molecules/common/Card";
 import BlogCarousel from "../organisms/carousel/BlogCarousel";
 import GetInTouch from "../organisms/common/GetAQuote";
 import LottieAnimation from "../molecules/common/LottieAnimation";
@@ -12,7 +11,8 @@ import ContactModal from "../organisms/modals/ContactModal";
 import Stack from "../organisms/Stack";
 import CheckOutSourceCode from "../organisms/common/CheckOutSourceCode";
 import {Projects} from "../organisms/projects/Projects";
-import i18n from "../../i18n/i18n";
+import WelcomeEngineer from "../organisms/landing/WelcomeEngineer";
+import WelcomeSecurity from "../organisms/landing/WelcomeSecurity";
 
 interface Props {
   articles
@@ -46,49 +46,19 @@ const LandingPage = (props: Props) => {
     stackRef={props.stackRef}
     blogRef={props.blogRef}
     menu={props.menu}
-    welcomeEngineer={
-      <Card title={i18n.t("welcome.engineer.title")}>
-        <h2>
-          {i18n.t("welcome.engineer.ama")}
-          <a href={props.contact?.linkedin}> {i18n.t('welcome.engineer.software-engineer')}</a>
-        </h2>
-        <h3>
-          <p><b>{i18n.t("welcome.engineer.what-i-do")}</b></p>
-          <p>
-            <a href="https://en.wikipedia.org/wiki/Agile_software_development">
-              {i18n.t("welcome.engineer.methodology")}
-            </a>
-          </p>
-          <p><b>{i18n.t("welcome.engineer.subtitle")}</b></p>
-        </h3>
-      </Card>
-    }
-    welcomeEngineerAnimation={
-      <LottieAnimation
+    welcomeEngineer={<WelcomeEngineer contact={props.contact} />}
+    welcomeEngineerAnimation={<LottieAnimation
         width={364}
         animation={programmingAnimation}
-      />
-    }
-    welcomeSecurity={
-      <Card title={i18n.t("welcome.security.title")}>
-        <h2>{i18n.t("welcome.security.subtitle")}</h2>
-        <h3>
-          <p>{i18n.t("welcome.security.trait")}</p>
-          <p><b>{i18n.t("welcome.security.advantage")}</b></p>
-        </h3>
-      </Card>
-    }
-    welcomeSecurityAnimation={
-      <LottieAnimation
+      />}
+    welcomeSecurity={<WelcomeSecurity />}
+    welcomeSecurityAnimation={<LottieAnimation
         width={300}
         animation={securityAnimation}
-      />
-    }
-    getInTouch={
-      <GetInTouch
+      />}
+    getInTouch={<GetInTouch
         onPress={props.openContactModal}
-      />
-    }
+      />}
     checkOutSourceCode={
       props.contact?.githubRepo && <CheckOutSourceCode link={props.contact.githubRepo} />
     }
@@ -96,26 +66,22 @@ const LandingPage = (props: Props) => {
       props.articles.length ? <BlogCarousel
         articles={props.articles}
         onItemPressed={props.onBlogCarouselItemPressed}
-      /> : React.Fragment
+      /> : <></>
     }
     stack={
       props.stack && <Stack stack={props.stack} />
     }
-    getAnEstimateModal={
-      <ContactModal
+    getAnEstimateModal={<ContactModal
         {...props}
         onClose={props.closeContactModal}
         visible={props.contactModalVisible}
-      />
-    }
-    projectsModal={
-      <Projects
+      />}
+    projectsModal={<Projects
         visible={props.projectsDrawerVisible}
         toggle={props.toggleProjectsDrawerVisible}
         projects={props.projects}
         companies={props.companies}
-      />
-    }
+      />}
   />;
 }
 

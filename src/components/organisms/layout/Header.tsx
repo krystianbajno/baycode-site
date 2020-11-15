@@ -7,7 +7,8 @@ import MenuEntry from "../../../menu/models/MenuEntry"
 import {redirect} from "../../../utils/navigation"
 
 const Header = (props) => {
-  const logo = useGrowingText("baycode", 10)
+  // const logo = useGrowingText("baycode", 10)
+  const logo = "baycode";
   const {menu} = props
 
   return <div className="header">

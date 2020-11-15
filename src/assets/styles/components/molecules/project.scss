@@ -44,7 +44,7 @@
 
     & > .client {
       & > .name {
-        background: -webkit-linear-gradient($logo-color, #9a00de);
+        background: -webkit-linear-gradient($logo-color, $gamboge);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 16px;
