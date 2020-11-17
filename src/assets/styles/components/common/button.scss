@@ -16,10 +16,11 @@
     inset -5px -5px 10px $white-neumorphic-brighter;
   }
 
-
+  font-family: $main-font-family;
   min-width: 48px;
-  height: 48px;
+  min-height: 48px;
   font-size: $medium;
+  font-weight: bold;
   padding: 12px;
   color: $white-alternative-text;
   z-index: 1;
@@ -27,6 +28,8 @@
 
   &.big {
     height: 64px;
+    font-size:14px;
+    font-weight: bold;
   }
 
   &.accent {

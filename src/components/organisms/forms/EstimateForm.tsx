@@ -45,7 +45,7 @@ export default (props) => {
           <FormInput
             title="Message"
             textarea
-            placeholder="My needs are / My message is..."
+            placeholder="My message (required)"
             value={estimate.contents}
             onChange={setEstimateContents}
             error={estimateErrors?.contents}

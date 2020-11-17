@@ -8,12 +8,12 @@
 }
 
 .blog-carousel-under-get-a-quote, .stack-container {
-  margin: 32px 24px 0px 24px;
+  margin: 64px 24px 0px 24px;
 }
 
 .blog-carousel-under-get-a-quote {
   @media screen and (max-width: $mobile-width) {
-    margin: 32px 0 32px 0;
+    margin: 64px 0 32px 0;
 
     & > * {
       & > .title {

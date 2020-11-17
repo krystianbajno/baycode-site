@@ -1,5 +1,13 @@
 @import '../../styles';
 
+.send-direct-contact-cta {
+  display:flex;
+  color: $primary;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+}
 .body {
   display: flex;
 

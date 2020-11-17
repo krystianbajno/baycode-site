@@ -25,7 +25,7 @@ interface Props {
   projectsDrawerVisible: boolean;
 }
 
-class BlogArticleController extends React.Component<Props, State> {
+class BlogArticleController extends React.PureComponent<Props, State> {
   public componentDidMount = () => {
     this.loadArticle()
   }

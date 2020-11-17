@@ -41,6 +41,7 @@
   }
 
   & > .image {
+    display:flex;
     min-height: 160px;
     max-height: 160px;
     & > img {

@@ -17,7 +17,7 @@ export default (props: Props) => {
     gap={16}
     scrollSnap={true}
     showDots={true}
-    dotColorActive={"#e63946"}
+    dotColorActive={"#0080e3ff"}
     loop
   >
     {articles && articles.map((article, key) => {
