@@ -19,7 +19,7 @@
     margin-top: 32px;
 
     & > h2 {
-      background: -webkit-linear-gradient($logo-color, $gamboge);
+      background: $logo-color;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 8px;

@@ -44,7 +44,7 @@
 
     & > .client {
       & > .name {
-        background: -webkit-linear-gradient($logo-color, $gamboge);
+        background: $logo-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 16px;
@@ -104,7 +104,6 @@
       font-weight: 300;
 
       & > .classtype {
-        font-style: italic;
 
         padding-top: 4px;
         padding-bottom: 4px;

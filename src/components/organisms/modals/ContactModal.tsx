@@ -1,4 +1,7 @@
 import * as React from "react"
+import "../../../assets/styles/components/modals/get-an-estimate-modal.scss"
+
+import Icon from "../../../assets/images/icon.svg"
 
 import Modal from '@trendmicro/react-modal';
 
@@ -11,7 +14,6 @@ import Expand from "react-expand-animated";
 import i18n from "../../../i18n/i18n";
 
 import Checkbox from '@material-ui/core/Checkbox';
-import "../../../assets/styles/components/modals/get-an-estimate-modal.scss"
 import ContactMolecule from "../../molecules/contact/Contact"
 
 interface State {
@@ -74,7 +76,10 @@ class ContactModal extends React.Component<Props, State> {
                 className={estimateFormExpanded && `pressed`}
                 onPress={toggleEstimateForm}
               >
-                {i18n.t('contact.send-a-message-directly')}
+                <span className="send-direct-contact-cta">
+                  <Icon height={32} width={32} />
+                  <span>{i18n.t('contact.send-a-message-directly')}</span>
+                </span>
               </Button>
               <Expand
                 open={estimateFormExpanded}

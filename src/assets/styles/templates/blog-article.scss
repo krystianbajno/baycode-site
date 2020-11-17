@@ -11,6 +11,8 @@ $blogBreak: 940px;
   margin-top: 64px;
 
   & > .image {
+    display:flex;
+
     z-index: 10;
     min-height: 200px;
     max-height: 600px;

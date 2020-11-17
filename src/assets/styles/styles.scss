@@ -55,6 +55,7 @@ input, input:before, input:after {
   select,
   textarea,
   input {
+    font-family: $main-font-family;
     font-size: 16px;
   }
 }
@@ -101,7 +102,7 @@ table {
   border-spacing: 0;
 }
 
-$mobile-width: 415px;
+$mobile-width: 533px;
 $site-width: 1280px;
 $border-radius: 32px;
 .hidden-mobile {

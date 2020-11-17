@@ -42,7 +42,7 @@ interface Props {
 }
 
 interface State {}
-class LandingPageController extends React.Component<Props, State>
+class LandingPageController extends React.PureComponent<Props, State>
 {
   render = () => <LandingPageView
     {...this.props}

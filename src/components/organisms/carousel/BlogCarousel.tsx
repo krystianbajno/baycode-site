@@ -7,9 +7,9 @@ const BlogCarousel = (props) => {
   const {articles, onItemPressed} = props;
 
   return <div className="blog-carousel">
-    <div className="title">
-      <h1>{i18n.t('blog')}</h1>
-    </div>
+    {/*<div className="title">*/}
+    {/*  <h1>{i18n.t('blog')}</h1>*/}
+    {/*</div>*/}
     <div className="carousel">
       <BlogCarouselGrid
         articles={articles}
