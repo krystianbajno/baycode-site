@@ -10,7 +10,7 @@ import { Projects } from "../organisms/projects/Projects"
 export default (props) => {
   return <BlogArticlePageTemplate
     title={props.selectedArticle?.title}
-    description={props.selectedArticle?.description}
+    description={props.selectedArticle?.shortDescription || props.selectedArticle?.description}
     image={props.selectedArticle?.header}
     contents={props.selectedArticle?.contents}
     articleInfo={<ArticleInfo
