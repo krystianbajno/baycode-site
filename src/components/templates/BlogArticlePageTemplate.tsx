@@ -8,13 +8,21 @@ export default (props) => {
     blogCarousel,
     image,
     title,
+    description,
     contactModal,
     projectsModal,
     articleInfo,
     articleContents
   } = props
 
-  return <MainLayout menu={menu} article>
+  return <MainLayout
+    menu={menu}
+    article
+    seo={{
+      title,
+      description
+    }}
+  >
     <div className="blog-article-page-template">
       <section className="image">
         <img src={image} alt={title}/>

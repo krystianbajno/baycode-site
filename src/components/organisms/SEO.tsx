@@ -50,8 +50,8 @@ const SEO = ({
       <meta name="twitter:image" content={image} />
       {twitterUser && <meta name="twitter:creator" content={twitterUser} />}
       <meta name="twitter:site" content={twitterUser} />
-      <link rel="icon"  href="favicon.svg" />
-      <link rel="mask-icon" href="favicon.svg" />
+      <link rel="icon"  href="https://baycode.eu/favicon.svg" />
+      <link rel="mask-icon" href="https://baycode.eu/favicon.svg" />
     </Helmet>
   )
 }

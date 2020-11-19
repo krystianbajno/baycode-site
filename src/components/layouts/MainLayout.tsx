@@ -10,23 +10,24 @@ import {getYear} from "../../utils/dates";
 import { graphql, useStaticQuery } from "gatsby"
 
 interface Props {
+  seo?: any
   children: any
   article?: boolean
   menu: any
 }
 
 export default  (props: Props) => {
-  const {children, menu, article} = props
+  const {children, menu, article, seo} = props
   const data = useStaticQuery(query)
 
   return <div className="layout">
     <Particles top={64} />
     <NotificationContainer />
     <SEO
-      title={data.site.siteMetadata.title}
-      description={data.site.siteMetadata.description}
-      siteUrl={data.site.siteMetadata.siteUrl}
-      image={data.site.siteMetadata.image}
+      title={seo && seo.title || data.site.siteMetadata.title}
+      description={seo && seo.description || data.site.siteMetadata.description}
+      siteUrl={seo && seo.siteUrl || data.site.siteMetadata.siteUrl}
+      image={seo && seo.image || data.site.siteMetadata.image}
       article={article || false}
     />
     <Header menu={menu} />
