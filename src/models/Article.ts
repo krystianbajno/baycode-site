@@ -10,6 +10,7 @@ interface Article {
   author?: Author;
   header?: string;
   contents?: any;
+  redirect?: string;
 }
 
 export default Article;

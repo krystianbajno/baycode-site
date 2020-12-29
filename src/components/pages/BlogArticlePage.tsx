@@ -19,13 +19,14 @@ export default (props) => {
       author={props.selectedArticle?.author}
     />}
     articleContents={<ArticleContents
+      redirect={props.selectedArticle?.redirect}
       contents={props.selectedArticle?.contents}
     />}
     blogCarousel={props.articles && <BlogCarousel
       articles={props.articles}
       onItemPressed={props.onBlogCarouselItemPressed}
     />}
-    contactModal={ <ContactModal
+    contactModal={<ContactModal
       {...props}
       contact={props.contact}
       onClose={props.closeContactModal}
