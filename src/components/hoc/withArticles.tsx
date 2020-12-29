@@ -13,7 +13,7 @@ import {
 } from "../../store/actions/ArticleActions"
 
 const onBlogCarouselItemPressed = async item => {
-  if (!item.slug) return NotificationManager.info("TBA")
+  if (!item.slug) return NotificationManager.info("To be announced")
   redirect(`/blog/${item.slug}`)
 }
 

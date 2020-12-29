@@ -34,6 +34,7 @@ class BlogArticleController extends React.PureComponent<Props, State> {
     try {
       const article = await this.props.getArticleBySlug(this.props.slug)
       await this.props.selectArticle(article)
+      if (this.props.selectedArticle.redirect) return redirect(this.props.selectedArticle.redirect)
     } catch(e) {
       redirect(`/404`)
     }

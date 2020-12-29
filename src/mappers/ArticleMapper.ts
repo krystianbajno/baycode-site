@@ -18,6 +18,7 @@ export const fromContentfulModel = (item): Article => {
     thumbnail: thumbnail && `https:${thumbnail}`,
     header: header && `https:${header}`,
     contents: item.fields.contents,
-    createdAt: item.fields.createdAt
+    createdAt: item.fields.createdAt,
+    redirect: item.fields.redirect
   }
 }

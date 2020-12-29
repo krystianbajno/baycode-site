@@ -23,6 +23,7 @@ export default (client: ContentfulClientInterface) => ({
     const skip = page * limit;
     return client.getEntries({
       content_type: CONTENT_TYPE,
+      order:'-fields.createdAt',
       skip,
       limit
     })

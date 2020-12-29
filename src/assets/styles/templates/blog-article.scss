@@ -6,8 +6,10 @@ $blogBreak: 940px;
 .blog-article-page-template {
   display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @media screen and (min-width: $blogBreak) {
+    align-items: center;
+    justify-content: center;
+  }
   margin-top: 64px;
 
   & > .image {
@@ -20,8 +22,11 @@ $blogBreak: 940px;
     & > img {
       @media screen and (min-width: $blogBreak) {
         border-radius: $border-radius;
+        max-height: 600px;
       }
-      max-height: 600px;
+
+      min-height:200px;
+      max-height:200px;
       width: 100%;
       object-fit: cover;
       background: $white;
@@ -39,7 +44,6 @@ $blogBreak: 940px;
     max-width: $blogBreak;
     width: 100%;
     min-height: 300px;
-    padding: 16px;
 
     & > .article-information {
       display: flex;
@@ -55,7 +59,7 @@ $blogBreak: 940px;
   .articles-grid {
     //transform: translateY(-200px);
     @media screen and (min-width: $mobile-width) {
-      transform: translateY(-180px);
+      transform: translateY(-200px);
     }
     @media screen and (max-width: 1200px) {
       margin: 32px 0 32px 0;
