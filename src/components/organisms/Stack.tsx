@@ -8,7 +8,7 @@ import i18n from "../../i18n/i18n";
 const RecurseChild = (props) => {
   const { title, children, link } = props.child
 
-  return <li>
+  return <li style={{zIndex: 100}}>
     {link ? <a href={link}>
       {title}
     </a> : title}

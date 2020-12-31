@@ -8,6 +8,7 @@ import 'react-notifications/lib/notifications.css';
 import Footer from "../organisms/layout/Footer";
 import {getYear} from "../../utils/dates";
 import { graphql, useStaticQuery } from "gatsby"
+import {height} from "../../utils/dom"
 
 interface Props {
   seo?: any
@@ -21,7 +22,7 @@ export default  (props: Props) => {
   const data = useStaticQuery(query)
 
   return <div className="layout">
-    <Particles top={64} />
+    <Particles height={height()}/>
     <NotificationContainer />
     <SEO
       title={seo && seo.title || data.site.siteMetadata.title}

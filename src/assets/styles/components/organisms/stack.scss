@@ -2,6 +2,7 @@
 @import "../../styles";
 
 .stack {
+  z-index: 1;
   & > .heading {
     margin-bottom: 16px;
     background: -webkit-linear-gradient($logo-color, $gamboge);
@@ -17,6 +18,7 @@
     align-items: center;
     width: 100%;
     margin-top: 32px;
+    z-index: 1;
 
     & > h2 {
       background: $logo-color;
@@ -44,6 +46,7 @@
   }
 
   & > .tools {
+    z-index: 10;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

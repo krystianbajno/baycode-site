@@ -61,7 +61,7 @@ export class LandingPageMenuBuilder implements Builder {
 
     this.menu.addMenuEntry(
        this.menuEntryFactory.create({
-         title:"Contact",
+         title:"Get a quote",
          hiddenMobile: false,
          onPress: () => this.openContact()
        })

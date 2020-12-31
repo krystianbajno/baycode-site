@@ -37,7 +37,7 @@ export default () => ({
         },
         line_linked: {
             random: true,
-            enable: true,
+            enable: false,
             distance: 300,
             color: "#ffffff",
             opacity: 1,
