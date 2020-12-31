@@ -6,7 +6,7 @@ import MenuEntry from "../../../menu/models/MenuEntry"
 import {redirect} from "../../../utils/navigation"
 
 const Header = (props) => {
-  const logo = "baycode";
+  const logo = "baycode.eu";
   const {menu} = props
 
   return <div className="header">

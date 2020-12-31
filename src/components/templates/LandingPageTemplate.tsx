@@ -1,6 +1,7 @@
 import * as React from "react";
 import "../../assets/styles/templates/landing-page.scss"
 import MainLayout from "../layouts/MainLayout";
+import Hero from "../organisms/landing/Hero"
 
 
 export default (props) => {
@@ -22,6 +23,9 @@ export default (props) => {
 
   return <MainLayout menu={menu}>
     <div className="landing-page-template">
+      <section id="first-impression" className="first-impression">
+        <Hero/>
+      </section>
       <section id="landing-tiles" className="landing-tiles">
         <div className="welcome-engineer">
           <div className="left">

@@ -4,6 +4,7 @@
   justify-content: center;
 
   & > .button-container {
+    z-index: 1;
     display:flex;
     justify-content:center;
   }

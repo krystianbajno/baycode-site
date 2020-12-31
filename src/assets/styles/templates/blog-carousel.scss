@@ -1,6 +1,7 @@
 @import "../definitions/colors";
 
 .blog-carousel {
+  z-index: 2;
   & > .title {
     background: -webkit-linear-gradient($logo-color, $gamboge);
     -webkit-background-clip: text;

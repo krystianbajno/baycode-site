@@ -5,10 +5,10 @@
   },
   "welcome": {
     "engineer": {
-      "title": "Hi",
+      "title": "Welcome",
       "ama": "I am a",
       "software-engineer": "software engineer ⚙",
-      "what-i-do": "I provide software tailored to your needs and help you build your business, contributing to the growth of investment together.",
+      "what-i-do": "Baycode provides software tailored to your needs and helps you build your business, contributing to the growth of investment together.",
       "methodology": "Agile methodology combined with cutting edge technologies ensures rapid development and reliable software.",
       "subtitle": "Your part is focusing on what you do best."
     },
@@ -16,7 +16,7 @@
       "title": "Security",
       "subtitle": "Secure solutions ensured",
       "trait": "As you may know, security is one of the most crucial fundamentals of a running business.",
-      "advantage": "With best coding practices, analysis, and penetration testing services, your data is secure in cyberspace."
+      "advantage": "With best coding practices, attention to vulnerabilities, and penetration testing services, your data is secure in cyberspace."
     }
   },
   "quote": "I want to get a quote",

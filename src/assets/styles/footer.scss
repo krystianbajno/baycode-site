@@ -9,6 +9,7 @@
   align-items: center;
 
   & > a {
+    z-index: 100;
     color: $primary;
     font-weight: bold;
     cursor: pointer;

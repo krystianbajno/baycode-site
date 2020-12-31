@@ -135,3 +135,12 @@ a:hover {
 b {
   font-weight: bold;
 }
+
+body {
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.tsparticles-canvas-el{
+  z-index: -1;
+}

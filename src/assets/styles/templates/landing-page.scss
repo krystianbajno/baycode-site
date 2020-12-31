@@ -1,6 +1,12 @@
 @import "../definitions/colors";
 @import "../styles";
 
+.first-impression {
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+}
+
 .get-a-quote-above-blog {
   @media screen and (min-width: 1024px) {
     margin-top: 64px;
