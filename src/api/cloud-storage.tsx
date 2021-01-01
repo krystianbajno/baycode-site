@@ -12,7 +12,7 @@ export interface CloudStorageApi {
 
 export default (client: axios.AxiosInstance) => ({
   getProjects: async () => client.get<
-    AxiosPromise<AxiosResponse>
+    AxiosResponse
   >("/projects.xml", {
     "headers": {
       "Content-Type": "application/xml",
@@ -20,7 +20,7 @@ export default (client: axios.AxiosInstance) => ({
     }
   }),
   getCompanies: async () => client.get<
-    AxiosPromise<AxiosResponse<Company[]>>
+   AxiosResponse<Company[]>
   >("/companies.json", {
     "headers": {
       "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export default (client: axios.AxiosInstance) => ({
     }
   }),
   getStack: async () => client.get<
-    AxiosPromise<AxiosResponse<Stack[]>>
+    AxiosResponse<Stack[]>
   >("/stack.json", {
     "headers": {
       "Content-Type": "application/json",

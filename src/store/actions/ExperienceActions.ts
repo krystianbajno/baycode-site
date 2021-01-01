@@ -63,7 +63,7 @@ export const getCompanies = () => async (
   {cloudStorageApi}: { cloudStorageApi: CloudStorageApi }
 ) => {
   const {data} = await cloudStorageApi.getCompanies()
-  return data;
+  return data.reverse();
 }
 
 export const getStack = () => async (
