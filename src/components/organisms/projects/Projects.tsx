@@ -21,13 +21,13 @@ export const Projects = (props) => {
         onClick={props.toggle}
         className="modal-close"
       />
-      <h2>
+      <h2 className="drawer-title">
         {i18n.t('drawer.companies')}
       </h2>
       <div className="companies-scroll">
         <CompaniesGrid companies={companies}/>
       </div>
-      <h2>
+      <h2 className="drawer-title">
         {i18n.t('drawer.projects')}
       </h2>
       <div className="projects-scroll">

@@ -8,7 +8,7 @@
 
   cursor: default;
 
-  //neomorphism
+  //neumorphism
   padding: 32px;
   background: $white;
   box-shadow:  22px 22px 44px #cdd5ca,
@@ -47,7 +47,7 @@
         background: $logo-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 16px;
+        font-size: 24px;
       }
       & > .company {
         margin-top: 8px;
@@ -61,7 +61,8 @@
     margin-bottom: 8px;
 
     & > .description {
-      line-height: 16px;
+      line-height: 24px;
+      font-size:16px;
       font-weight: 600;
     }
 
@@ -80,11 +81,12 @@
   }
 
   & > .stack {
+    font-size: 16px;
     display: flex;
     justify-content: space-evenly;
     & > .technology {
       font-weight: 600;
-      //margin-top: 8px;
+      margin-top: 8px;
     }
   }
 

@@ -6,12 +6,11 @@
   align-items: center;
   justify-content: center;
   text-align:center;
-  white-space:nowrap;
   font-weight: 800;
   border: none;
   min-width: 32px;
   color: $primary;
-  font-size: 16px;
+  font-size: calc(12px + 0.5vw);
   padding: 6px 12px;
   transition: 0.2s;
 

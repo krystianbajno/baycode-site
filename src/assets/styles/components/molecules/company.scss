@@ -12,18 +12,18 @@
     background: -webkit-linear-gradient($logo-color, $gamboge);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 12px;
+    font-size: 24px;
   }
 
   & > .description {
     display: flex;
     flex-direction: column;
-    margin-top: 4px;
+    margin-top: 8px;
 
     & > span {
       font-weight: 300;
       line-height: 20px;
-      margin-top: 4px;
+      margin-top: 8px;
     }
   }
 }
