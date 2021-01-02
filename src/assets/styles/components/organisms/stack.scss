@@ -5,6 +5,7 @@
   z-index: 1;
   & > .heading {
     margin-bottom: 16px;
+    font-weight:800;
     background: -webkit-linear-gradient($logo-color, $gamboge);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -21,6 +22,7 @@
     z-index: 1;
 
     & > h2 {
+      font-weight:800;
       background: $logo-color;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

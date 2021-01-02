@@ -2,9 +2,9 @@
 @import "../styles";
 
 .first-impression {
-  margin-top: 64px;
-  margin-bottom: 64px;
-
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-radius: 0 0 32px 32px;
 }
 
 .get-a-quote-above-blog {
@@ -19,7 +19,7 @@
 
 .blog-carousel-under-get-a-quote {
   @media screen and (max-width: $mobile-width) {
-    margin: 64px 0 32px 0;
+    margin: 64px 0 16px 0;
 
     & > * {
       & > .title {
@@ -34,7 +34,11 @@
 }
 
 .check-out-source-code-section {
-  margin-top: 86px;
+  @media screen and (min-width: $mobile-width) {
+    margin-top: 64px;
+  }
+
+  margin-top: 16px;
   margin-bottom: 32px;
 }
 

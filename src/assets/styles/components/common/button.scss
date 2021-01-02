@@ -6,12 +6,12 @@
 
   // neumorphism
   border-radius: 8px;
-  background: $white-alternative;
+  background: $white;
   box-shadow:  5px 5px 10px $white-neumorphic-darker,
   -5px -5px 10px $white-neumorphic-brighter;
 
   &.pressed {
-    background: $white-alternative;
+    background: $white;
     box-shadow:  inset 5px 5px 10px $white-neumorphic-darker,
     inset -5px -5px 10px $white-neumorphic-brighter;
   }

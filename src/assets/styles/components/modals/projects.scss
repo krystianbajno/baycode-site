@@ -2,11 +2,15 @@
 @import "../../definitions/colors";
 
 
+.drawer-title {
+  margin-bottom: 8px;
+}
+
 .drawer-container {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background: $white-alternative;
+  background: $white;
   max-width: $mobile-width;
 
   & > h2 {

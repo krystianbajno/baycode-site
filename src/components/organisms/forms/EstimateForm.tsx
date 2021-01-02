@@ -44,6 +44,7 @@ export default (props) => {
       <div className="contents">
           <FormInput
             title="Message"
+            required
             textarea
             placeholder="My message (required)"
             value={estimate.contents}

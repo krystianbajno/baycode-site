@@ -63,8 +63,6 @@
   display: inline-block;
   background-color: #fff;
   border: 1px solid #ccc;
-  -webkit-box-shadow: 0 4px 16px rgba(0,0,0,0.5);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
   white-space: normal;
 }
 
@@ -149,7 +147,7 @@
 }
 .modal---modal-content---3pwnC .modal---modal-header---2YL1L {
   min-height: 54px;
-  background-color: #f1faee;
+  background-color: $white;
   border-bottom: 1px solid #ccc;
   padding: 0;
 }
@@ -182,7 +180,7 @@
   min-height: 56px;
   margin-top: 0;
   text-align: right;
-  background-color: #f1faee;
+  background-color: $white;
   padding: 0;
 }
 .modal---modal-content---3pwnC .modal---modal-footer---20LPi.modal---padding---2ENnv {
