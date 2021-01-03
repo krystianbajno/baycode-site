@@ -1,11 +1,17 @@
 @import "../../definitions/colors";
 
+.asterisk {
+  font-size:16px;
+  font-weight: bolder;
+  color: $validation-color;
+}
 .form-input {
   color: $white-alternative-text;
 
-  & > .title {
+  & > .form-input-title {
     font-size: 14px;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
+    font-weight: bolder;
   }
 
   .error {

@@ -73,11 +73,10 @@ class ContactModal extends React.Component<Props, State> {
           <div className="body">
             {estimate && <div className="form">
               <Button
-                className={estimateFormExpanded && `pressed`}
+                className={estimateFormExpanded && `pressed` || `primary`}
                 onPress={toggleEstimateForm}
               >
                 <span className="send-direct-contact-cta">
-                  <Icon height={32} width={32} />
                   <span>{i18n.t('contact.send-a-message-directly')}</span>
                 </span>
               </Button>
