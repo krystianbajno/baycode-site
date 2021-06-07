@@ -4,13 +4,13 @@ const Routing = ({actions}) => {
   const {createPage} = actions
 
   createPage({
-    path: "/blog",
+    path: "blog-index",
     matchPath: "/blog",
     component: path.resolve("./src/pages/blog/index.tsx"),
   })
 
   createPage({
-    path: "/blog/slug",
+    path: "blog-by-slug",
     matchPath: "/blog/:slug",
     component: path.resolve("./src/pages/blog/_slug.tsx"),
   })
