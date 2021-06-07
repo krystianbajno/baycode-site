@@ -46,6 +46,13 @@ export default function articleReducer(state = initialState, action: ArticleActi
       }
     }
 
+    case actionType.SET_CURRENT_PAGE: {
+      return {
+        ...state,
+        currentPage: action.payload
+      }
+    }
+
     default:
       return state;
   }

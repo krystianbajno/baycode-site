@@ -2,7 +2,7 @@ import Article from "../../models/Article";
 import {fromContentfulModel} from "../../mappers/ArticleMapper";
 import { ArticlesApi } from "../../api/articles"
 
-const PER_PAGE = 10;
+const PER_PAGE = 6;
 
 export const actionType = {
   SET_CURRENT_PAGE: "articles/SET_CURRENT_PAGE",
@@ -122,10 +122,12 @@ export const getMoreArticles = () => async (
   getState: any
 ) => {
   await dispatch(setArticlesLoading(true))
-  const currentPage = await getState().article.currentPage
 
+  let currentPage = await getState().article.currentPage
   await dispatch(setCurrentPage(currentPage + 1))
-  const {articles, total} = await dispatch(getArticles(currentPage + 1))
+  currentPage = await getState().article.currentPage
+
+  const {articles, total} = await dispatch(getArticles(currentPage))
 
   await dispatch(setArticles([...getState().article.articles, ...articles]))
   await dispatch(setTotal(total))
